@@ -1,7 +1,7 @@
 <p align="center">
   <a href="">
     <h1 align="center">
-      Next Template
+      Next.js Template
     </h1>
   </a>
 </p>
@@ -11,7 +11,6 @@
 1.  **Next.js Template**
 
     ```shell
-    # clone into your workspace
     git clone git@github.com:comua/next-template.git
     ```
 
