@@ -9,10 +9,10 @@ const Home: FC = () => {
   return (
     <AnimatePresence>
       <div
-        className={`relative flex w-[100svw] flex-col items-center justify-center bg-black px-24 text-white tablet:px-48`}
+        className={`relative flex w-[100svw] flex-col items-center justify-center bg-black p-48 px-24 text-white`}
       >
         <NextSeo title={title} description={description} openGraph={{ title, description }} />
-        <div>Hello World</div>
+        {Array(50).fill(<div>Hello World</div>)}
       </div>
     </AnimatePresence>
   )
