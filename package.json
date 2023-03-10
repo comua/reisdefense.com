@@ -9,12 +9,11 @@
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
-      "eslint --fix",
-      "git add"
+      "prettier --write",
+      "eslint --fix"
     ],
     "*.+(json|css|md)": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "scripts": {

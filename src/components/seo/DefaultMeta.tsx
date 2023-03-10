@@ -5,11 +5,11 @@ import resolveConfig from 'tailwindcss/resolveConfig'
 
 import tailwindConfig from '../../../tailwind.config.js'
 
-interface DefaultMetaProps {
+interface IDefaultMetaProps {
   canonical: string
 }
 
-export const DefaultMeta: FC<DefaultMetaProps> = ({ canonical }) => {
+export const DefaultMeta: FC<IDefaultMetaProps> = ({ canonical }) => {
   const tailwindVars = resolveConfig(tailwindConfig)
   const site = {
     themeColor: (tailwindVars.theme.colors as any).light,
