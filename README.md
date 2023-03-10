@@ -8,20 +8,20 @@
 
 ## 🚀 Quick start
 
-1.  **Next.js Template**
+1.  **Clone repository**
 
     ```shell
     git clone git@github.com:comua/next-template.git
     ```
 
-1.  **Start developing.**
+1.  **Start developing**
 
     ```shell
     pnpm install
     pnpm run dev
     ```
 
-1.  **Open the source code and start editing!**
+1.  **Open the source code and start editing**
 
     Your site is now running at `http://localhost:3000`!
 
