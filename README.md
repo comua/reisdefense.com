@@ -17,7 +17,6 @@
 1.  **Start developing.**
 
     ```shell
-    cd uniswap-dashboard
     pnpm install
     pnpm run dev
     ```
@@ -28,18 +27,49 @@
 
 ## 🧐 What's inside?
 
-- react
+#### Language
+
 - typescript
+
+#### Library
+
+- react
+
+### Web Framework
+
 - nextjs
+- next-seo
+
+### State Management
+
+- react-query
+
+### Dev Environment
+
 - eslint
-- lint-staged
 - prettier
+- husky
+- lint-staged
+
+### Testing
+
+- vitest
+- testing library
+
+### Styling
+
 - tailwindcss
 - postcss
 - autoprefixer
 - tailwind-merge
-- next-seo
+
+### Animation
+
+- framer-motion
 - gsap
 - react-transition-group
-- framer-motion
+
+### Utilities
+
+- react-loading-skeleton
 - usehooks-ts
