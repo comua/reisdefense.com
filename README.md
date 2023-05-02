@@ -1,17 +1,23 @@
 <p align="center">
   <a href="">
     <h1 align="center">
-      Next.js Template
+      reisdefense.com
     </h1>
   </a>
 </p>
 
-## 🚀 Quick start
+## Start
 
 1.  **Clone repository**
 
     ```shell
     git clone git@github.com:comua/next-template.git
+    ```
+
+1.  **Set up .env with localhost URL**
+
+    ```shell
+    NEXT_PUBLIC_BASE_URL=http://localhost:3000
     ```
 
 1.  **Start developing**
@@ -25,7 +31,7 @@
 
     Your site is now running at `http://localhost:3000`!
 
-## 🧐 What's inside?
+## Inside
 
 #### Language
 
@@ -40,10 +46,6 @@
 - nextjs
 - next-seo
 
-### State Management
-
-- react-query
-
 ### Dev Environment
 
 - eslint
@@ -51,25 +53,18 @@
 - husky
 - lint-staged
 
-### Testing
-
-- vitest
-- testing library
-
 ### Styling
 
 - tailwindcss
 - postcss
 - autoprefixer
 - tailwind-merge
+- clsx
 
 ### Animation
 
 - framer-motion
-- gsap
-- react-transition-group
 
 ### Utilities
 
-- react-loading-skeleton
 - usehooks-ts
