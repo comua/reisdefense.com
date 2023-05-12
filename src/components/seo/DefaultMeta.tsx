@@ -13,14 +13,14 @@ export const DefaultMeta: FC<DefaultMetaProps> = ({ canonical }) => {
   const site = {
     themeColor: (tailwindVars.theme.colors as any).light,
     locale: 'en',
-    name: 'Rebecca Reis Defense 2023',
+    name: 'Reis Defense',
     description: 'Rebecca Reis PhD Defense 2023',
   }
 
   return (
     <>
       <DefaultSeo
-        titleTemplate={`${site.name} - %s`}
+        titleTemplate={`%s - ${site.name}`}
         defaultTitle={site.name}
         description={site.description}
         canonical={canonical}

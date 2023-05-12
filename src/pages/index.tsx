@@ -14,7 +14,7 @@ const Home: FC = () => {
     <Layout className="radial-gradient-t max-h-[100svh]">
       <AnimatePresence>
         <main className="flex w-full flex-col gap-page p-page">
-          <Seo title="Home" description="Home page" />
+          <Seo title="Rebecca Reis" description="Home page" />
 
           <section className="flex grid-cols-5 flex-col-reverse gap-24 tablet:grid tablet:min-h-[40svh] tablet:gap-48">
             <AnimatedImage
@@ -32,10 +32,10 @@ const Home: FC = () => {
               }}
               className="col-span-3 flex flex-col justify-between gap-16"
             >
-              <h1 className="flex flex-col">
-                <span>Rebecca Reis</span>
-                <span className="text-slate-400">Thesis Defense</span>
-              </h1>
+              <div className="flex flex-col">
+                <h1>Rebecca Reis</h1>
+                <h1 className="text-slate-400">Thesis Defense</h1>
+              </div>
               <h2 className="flex flex-col text-slate-400">
                 <span>Microbiology Committee</span>
                 <span>Advised by Glenn Randall</span>
