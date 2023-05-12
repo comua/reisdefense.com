@@ -5,7 +5,9 @@ export const config = {
   runtime: 'edge',
 }
 
-const image = fetch(new URL('./open-graph.png', import.meta.url)).then((res) => res.arrayBuffer())
+const image = fetch(new URL('assets/open-graph.png', import.meta.url)).then((res) =>
+  res.arrayBuffer()
+)
 
 export default async function handler() {
   const imageData = (await image) as unknown as string
