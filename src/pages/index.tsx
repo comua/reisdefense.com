@@ -20,24 +20,27 @@ const Home: FC = () => {
             <AnimatedImage
               src="assets/hero.jpg"
               alt="rebecca reis header"
-              className="col-span-2 h-[20svh] tablet:h-auto"
+              className="col-span-2 h-[30svh] tablet:h-auto"
             />
 
-            <motion.h1
+            <motion.div
               initial={{ opacity: 0, translateY: '-1rem' }}
               animate={{
                 opacity: 1,
                 translateY: 0,
                 transition: { duration: 1, ease: EASING.ease },
               }}
-              className="col-span-3 flex flex-col gap-16"
+              className="col-span-3 flex flex-col justify-between gap-16"
             >
-              <span>Rebecca Reis</span>
-              <span className="flex flex-col text-slate-400">
-                <span>Graduate Student</span>
-                <span>Committee on Microbiology</span>
-              </span>
-            </motion.h1>
+              <h1 className="flex flex-col">
+                <span>Rebecca Reis</span>
+                <span className="text-slate-400">Thesis Defense</span>
+              </h1>
+              <h2 className="flex flex-col text-slate-400">
+                <span>Microbiology Committee</span>
+                <span>Advised by Glenn Randall</span>
+              </h2>
+            </motion.div>
           </section>
 
           <section className="flex grid-cols-5 flex-col gap-24 tablet:grid tablet:gap-48">
@@ -48,7 +51,7 @@ const Home: FC = () => {
                 translateY: 0,
                 transition: { delay: 0.4, duration: 1.2, ease: EASING.ease },
               }}
-              className="border-gradient col-span-3 flex flex-col rounded-lg p-32"
+              className="border-gradient col-span-3 flex flex-col rounded-lg p-page"
             >
               <h2 className="flex flex-col gap-16">
                 <span className="text-slate-50">
@@ -69,7 +72,7 @@ const Home: FC = () => {
                   transition: { delay: 0.8, duration: 1.2, ease: EASING.ease },
                 }}
                 href="https://ucmedicinegroup.zoom.us/j/96573282152?pwd=OE9GcW8wU0 pMOCsrcGxiK3ViNFZtUT09"
-                className="group my-32"
+                className="group my-32 max-w-fit rounded-full"
               >
                 <Button className="bg-gradient-to-r from-indigo-600 to-violet-600 transition-[filter] hover:brightness-110">
                   Join via Zoom
@@ -97,7 +100,7 @@ const Home: FC = () => {
             <AnimatedImage
               src="assets/action.jpg"
               alt="rebecca reis pipette action"
-              className="col-span-2 h-[20svh] tablet:h-auto"
+              className="col-span-2 h-[30svh] tablet:h-auto"
             />
           </section>
 
