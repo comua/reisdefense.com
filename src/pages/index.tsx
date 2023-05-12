@@ -22,7 +22,7 @@ const Home: FC = () => {
         >
           <Seo title="Rebecca Reis" description="Home page" />
 
-          <section className="flex grid-cols-5 flex-col-reverse gap-24 tablet:grid tablet:min-h-[40svh] tablet:gap-48">
+          <section className="flex grid-cols-5 flex-col-reverse gap-24 tablet:grid tablet:min-h-[35svh] tablet:gap-48">
             <AnimatedImage
               src="assets/hero.jpg"
               alt="rebecca reis header"
