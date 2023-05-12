@@ -13,7 +13,6 @@
   "dependencies": {
     "@next/bundle-analyzer": "^13.2.4",
     "@next/font": "13.1.1",
-    "@vercel/og": "^0.5.4",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
     "dayjs": "^1.11.7",
