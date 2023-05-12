@@ -73,7 +73,7 @@
   .radial-gradient {
     background-image: radial-gradient(
       ellipse 100% 40% at 50% 60%,
-      rgba(102, 99, 246, 0.07),
+      rgba(var(--rgb), 0.07),
       theme(colors.transparent)
     );
   }
@@ -81,7 +81,7 @@
   .radial-gradient-t {
     background-image: radial-gradient(
       ellipse 80% 50% at 50% -20%,
-      rgba(120, 119, 198, 0.3),
+      rgba(var(--rgb), 0.3),
       theme(colors.transparent)
     );
   }

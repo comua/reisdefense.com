@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { FC } from 'react'
+import { CSSProperties, FC } from 'react'
 
 import { Button } from '@/components/Button'
 import { ChevronRightIcon } from '@/components/icons/ChevronRightIcon'
@@ -11,9 +11,15 @@ import { EASING } from '@/lib/animation'
 
 const Home: FC = () => {
   return (
-    <Layout className="radial-gradient-t max-h-[100svh]">
+    <Layout
+      className="radial-gradient-t max-h-[100svh]"
+      style={{ '--rgb': '0,225,244' } as CSSProperties}
+    >
       <AnimatePresence>
-        <main className="flex w-full flex-col gap-page p-page">
+        <main
+          className="radial-gradient flex w-full flex-col gap-page p-page"
+          style={{ '--rgb': '0,225,244' } as CSSProperties}
+        >
           <Seo title="Rebecca Reis" description="Home page" />
 
           <section className="flex grid-cols-5 flex-col-reverse gap-24 tablet:grid tablet:min-h-[40svh] tablet:gap-48">
@@ -58,7 +64,10 @@ const Home: FC = () => {
                   Host and viral regulation of innate immunity to infection
                 </span>
                 <span className="flex flex-col">
-                  <span>Monday, May 22nd, 2023</span>
+                  <span>
+                    Mon<span className="hidden tablet:inline">day</span>, May 22
+                    <span className="hidden tablet:inline">nd,</span> 2023
+                  </span>
                   <span>2:00pm Central</span>
                   <span>BSLC 115</span>
                 </span>
@@ -72,7 +81,7 @@ const Home: FC = () => {
                   transition: { delay: 0.8, duration: 1.2, ease: EASING.ease },
                 }}
                 href="https://ucmedicinegroup.zoom.us/j/96573282152?pwd=OE9GcW8wU0 pMOCsrcGxiK3ViNFZtUT09"
-                className="group my-32 max-w-fit rounded-full"
+                className="group my-page max-w-fit rounded-full"
               >
                 <Button className="bg-gradient-to-r from-indigo-600 to-violet-600 transition-[filter] hover:brightness-110">
                   Join via Zoom

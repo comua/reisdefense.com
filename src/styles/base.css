@@ -84,7 +84,7 @@
   }
 
   h1 {
-    @apply bg-clip-text pb-8 text-48 font-medium leading-none tracking-tight text-transparent tablet:text-80;
+    @apply bg-clip-text pb-8 text-[4rem] font-medium leading-none tracking-tight text-transparent tablet:text-80;
     background-image: linear-gradient(
       to right bottom,
       rgb(255, 255, 255) 30%,
@@ -93,7 +93,7 @@
   }
 
   h2 {
-    @apply bg-clip-text pb-8 text-32 font-medium leading-none tracking-tight text-slate-400 tablet:text-48;
+    @apply bg-clip-text pb-8 text-24 font-medium leading-none tracking-tight text-slate-400 tablet:text-48;
   }
 
   h3 {
