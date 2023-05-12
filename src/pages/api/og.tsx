@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { ImageResponse } from '@vercel/og'
 
 export const config = {
@@ -7,7 +8,7 @@ export const config = {
 const image = fetch(new URL('./open-graph.png', import.meta.url)).then((res) => res.arrayBuffer())
 
 export default async function handler() {
-  const imageData = await image
+  const imageData = (await image) as unknown as string
   return new ImageResponse(
     (
       <div
@@ -21,7 +22,7 @@ export default async function handler() {
           alignItems: 'center',
         }}
       >
-        <img width="1920" height="1078" src={imageData} />
+        <img width="1920" height="1078" alt="open graph image" src={imageData} />
       </div>
     ),
     {
