@@ -40,6 +40,7 @@ module.exports = {
     },
     fontFamily: {
       primary: ['var(--font-inter)', fontFamily.sans],
+      cute: ['var(--font-gotham-rounded)', fontFamily.sans],
     },
     fontSize: {
       base: '1.4rem',

@@ -39,3 +39,17 @@
     transform: none;
   }
 }
+
+@keyframes floatInOut {
+  0% {
+    opacity: 0;
+    transform: rotate(-16deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+}

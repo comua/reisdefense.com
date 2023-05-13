@@ -43,13 +43,26 @@ const Home: FC = () => {
                 <h1 className="text-slate-400">Thesis Defense</h1>
               </div>
               <h2 className="flex flex-col text-slate-400">
-                <span>Microbiology Committee</span>
+                <span>Committee on Microbiology</span>
                 <span>Advised by Glenn Randall</span>
               </h2>
             </motion.div>
           </section>
 
-          <section className="flex grid-cols-5 flex-col gap-24 tablet:grid tablet:gap-48">
+          <section className="relative flex grid-cols-5 flex-col gap-24 tablet:grid tablet:gap-48">
+            <motion.img
+              initial={{ scale: 0, opacity: 0, translateY: '-100%' }}
+              animate={{ scale: 1, opacity: 1, translateY: '-100%' }}
+              exit={{ scale: 0, opacity: 0 }}
+              transition={{ delay: 1.5, ease: EASING.ease }}
+              src="assets/mochi-cat.png"
+              alt="mochi cat"
+              className="absolute right-[5svw] top-0 h-[12rem] tablet:h-[20rem]"
+            />
+            <h2 className="animate-float absolute right-[5svw] top-[-12rem] font-cute text-slate-50 tablet:top-[-20rem]">
+              Meow!
+            </h2>
+
             <motion.div
               initial={{ opacity: 0, translateY: '-1rem' }}
               animate={{

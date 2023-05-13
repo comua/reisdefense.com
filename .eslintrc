@@ -25,6 +25,7 @@
   },
   "plugins": ["@typescript-eslint", "prettier", "tailwindcss", "simple-import-sort"],
   "rules": {
+    "@next/next/no-img-element": "off",
     "@typescript-eslint/comma-dangle": "off", // Avoid conflict rule between ESlint and Prettier
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": "error",
