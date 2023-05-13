@@ -74,6 +74,17 @@
     animation-delay: 2s;
   }
 
+  .animate-float-now {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: floatInOut;
+  }
+
   .hero {
     perspective: 2000px;
   }

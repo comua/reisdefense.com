@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { CSSProperties, FC } from 'react'
+import { CSSProperties, FC, useState } from 'react'
 
 import { Button } from '@/components/Button'
 import { ChevronRightIcon } from '@/components/icons/ChevronRightIcon'
@@ -10,6 +10,8 @@ import { AnimatedImage } from '@/features/home/AnimatedImage'
 import { EASING } from '@/lib/animation'
 
 const Home: FC = () => {
+  const [meows, setMeows] = useState([])
+
   return (
     <Layout
       className="radial-gradient-t max-h-[100svh]"
@@ -50,18 +52,34 @@ const Home: FC = () => {
           </section>
 
           <section className="relative flex grid-cols-5 flex-col gap-24 tablet:grid tablet:gap-48">
-            <motion.img
-              initial={{ scale: 0, opacity: 0, translateY: '-100%' }}
-              animate={{ scale: 1, opacity: 1, translateY: '-100%' }}
-              exit={{ scale: 0, opacity: 0 }}
-              transition={{ delay: 1.5, ease: EASING.ease }}
-              src="assets/mochi-cat.png"
-              alt="mochi cat"
-              className="absolute right-[5svw] top-0 h-[12rem] tablet:h-[20rem]"
-            />
+            <button
+              className="absolute right-[5svw] top-0"
+              onClick={() => setMeows([...meows, 'meow'])}
+            >
+              <motion.img
+                initial={{ scale: 0, opacity: 0, translateY: '-100%' }}
+                animate={{ scale: 1, opacity: 1, translateY: '-100%' }}
+                exit={{ scale: 0, opacity: 0 }}
+                transition={{ delay: 1.5, ease: EASING.ease }}
+                src="assets/mochi-cat.png"
+                alt="mochi cat"
+                className="h-[12rem] tablet:h-[20rem]"
+              />
+            </button>
             <h2 className="animate-float absolute right-[5svw] top-[-12rem] font-cute text-slate-50 tablet:top-[-20rem]">
               Meow!
             </h2>
+
+            {meows.map((meow, index) => {
+              return (
+                <h2
+                  key={`meow-${index}`}
+                  className="animate-float-now absolute right-[5svw] top-[-12rem] font-cute text-slate-50 opacity-0 tablet:top-[-20rem]"
+                >
+                  Meow!
+                </h2>
+              )
+            })}
 
             <motion.div
               initial={{ opacity: 0, translateY: '-1rem' }}
