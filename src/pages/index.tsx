@@ -53,7 +53,7 @@ const Home: FC = () => {
 
           <section className="relative flex grid-cols-5 flex-col gap-24 tablet:grid tablet:gap-48">
             <button
-              className="absolute right-[5svw] top-0"
+              className="absolute right-[5svw] top-0 select-none rounded"
               onClick={() => setMeows([...meows, 'meow'])}
             >
               <motion.img
@@ -66,7 +66,7 @@ const Home: FC = () => {
                 className="h-[12rem] tablet:h-[20rem]"
               />
             </button>
-            <h2 className="animate-float absolute right-[5svw] top-[-12rem] font-cute text-slate-50 tablet:top-[-20rem]">
+            <h2 className="animate-float absolute right-[5svw] top-[-12rem] select-none font-cute text-slate-50 tablet:top-[-20rem]">
               Meow!
             </h2>
 
@@ -74,7 +74,7 @@ const Home: FC = () => {
               return (
                 <h2
                   key={`meow-${index}`}
-                  className="animate-float-now absolute right-[5svw] top-[-12rem] font-cute text-slate-50 opacity-0 tablet:top-[-20rem]"
+                  className="animate-float-now absolute right-[5svw] top-[-12rem] select-none font-cute text-slate-50 opacity-0 tablet:top-[-20rem]"
                 >
                   Meow!
                 </h2>
